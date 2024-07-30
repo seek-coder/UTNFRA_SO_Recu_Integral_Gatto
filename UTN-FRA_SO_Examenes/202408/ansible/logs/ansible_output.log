@@ -1,0 +1,361 @@
+2024-07-30 17:02:45,517 p=3301 u=bgatto n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-30 17:02:45,863 p=3301 u=bgatto n=ansible | PLAY [all] **********************************************************************************************************************************************************************************************************************************
+2024-07-30 17:02:45,895 p=3301 u=bgatto n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+2024-07-30 17:02:47,774 p=3301 u=bgatto n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nbgatto@127.0.0.1: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2024-07-30 17:02:48,045 p=3301 u=bgatto n=ansible | ok: [localhost]
+2024-07-30 17:02:48,061 p=3301 u=bgatto n=ansible | TASK [include_role : 2PRecuperatorio] *******************************************************************************************************************************************************************************************************
+2024-07-30 17:02:48,082 p=3301 u=bgatto n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to be in '/home/bgatto/UTN-FRA_SO_Examenes/202408/ansible/roles/2PRecuperatorio/tasks/main.yml': line 10, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+     recurse: yes
+  with_items:
+  ^ here
+
+2024-07-30 17:03:40,830 p=3444 u=bgatto n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-30 17:03:40,897 p=3444 u=bgatto n=ansible | PLAY [all] **********************************************************************************************************************************************************************************************************************************
+2024-07-30 17:03:40,912 p=3444 u=bgatto n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+2024-07-30 17:03:41,060 p=3444 u=bgatto n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nbgatto@127.0.0.1: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2024-07-30 17:03:42,057 p=3444 u=bgatto n=ansible | ok: [localhost]
+2024-07-30 17:03:42,073 p=3444 u=bgatto n=ansible | TASK [include_role : 2PRecuperatorio] *******************************************************************************************************************************************************************************************************
+2024-07-30 17:03:42,151 p=3444 u=bgatto n=ansible | TASK [2PRecuperatorio : Crear directorios en /tmp/alumno/] **********************************************************************************************************************************************************************************
+2024-07-30 17:03:42,518 p=3444 u=bgatto n=ansible | changed: [localhost] => (item=log)
+2024-07-30 17:03:42,751 p=3444 u=bgatto n=ansible | changed: [localhost] => (item=config)
+2024-07-30 17:03:42,765 p=3444 u=bgatto n=ansible | TASK [2PRecuperatorio : Crear archivo datos.txt] ********************************************************************************************************************************************************************************************
+2024-07-30 17:03:43,585 p=3444 u=bgatto n=ansible | changed: [localhost]
+2024-07-30 17:03:43,598 p=3444 u=bgatto n=ansible | TASK [Otra tarea] ***************************************************************************************************************************************************************************************************************************
+2024-07-30 17:03:43,610 p=3444 u=bgatto n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-07-30 17:03:43,631 p=3444 u=bgatto n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************************************
+2024-07-30 17:03:43,632 p=3444 u=bgatto n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-30 17:03:43,632 p=3444 u=bgatto n=ansible | localhost                  : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-30 17:08:57,858 p=3810 u=bgatto n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-30 17:08:57,933 p=3810 u=bgatto n=ansible | PLAY [all] **********************************************************************************************************************************************************************************************************************************
+2024-07-30 17:08:57,954 p=3810 u=bgatto n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+2024-07-30 17:08:58,257 p=3810 u=bgatto n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nbgatto@127.0.0.1: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2024-07-30 17:08:59,054 p=3810 u=bgatto n=ansible | ok: [localhost]
+2024-07-30 17:08:59,069 p=3810 u=bgatto n=ansible | TASK [include_role : 2PRecuperatorio] *******************************************************************************************************************************************************************************************************
+2024-07-30 17:08:59,095 p=3810 u=bgatto n=ansible | TASK [2PRecuperatorio : Crear directorios en /tmp/alumno/] **********************************************************************************************************************************************************************************
+2024-07-30 17:08:59,448 p=3810 u=bgatto n=ansible | ok: [localhost] => (item=log)
+2024-07-30 17:08:59,707 p=3810 u=bgatto n=ansible | ok: [localhost] => (item=config)
+2024-07-30 17:08:59,715 p=3810 u=bgatto n=ansible | TASK [2PRecuperatorio : Crear archivo datos.txt] ********************************************************************************************************************************************************************************************
+2024-07-30 17:09:00,298 p=3810 u=bgatto n=ansible | ok: [localhost]
+2024-07-30 17:09:00,309 p=3810 u=bgatto n=ansible | TASK [Otra tarea] ***************************************************************************************************************************************************************************************************************************
+2024-07-30 17:09:00,321 p=3810 u=bgatto n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-07-30 17:09:00,352 p=3810 u=bgatto n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************************************
+2024-07-30 17:09:00,353 p=3810 u=bgatto n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-30 17:09:00,353 p=3810 u=bgatto n=ansible | localhost                  : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-30 17:10:10,308 p=3957 u=bgatto n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-30 17:10:10,394 p=3957 u=bgatto n=ansible | PLAY [all] **********************************************************************************************************************************************************************************************************************************
+2024-07-30 17:10:10,412 p=3957 u=bgatto n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+2024-07-30 17:10:10,692 p=3957 u=bgatto n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nbgatto@127.0.0.1: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2024-07-30 17:10:11,820 p=3957 u=bgatto n=ansible | ok: [localhost]
+2024-07-30 17:10:11,840 p=3957 u=bgatto n=ansible | TASK [include_role : 2PRecuperatorio] *******************************************************************************************************************************************************************************************************
+2024-07-30 17:10:11,885 p=3957 u=bgatto n=ansible | TASK [2PRecuperatorio : Crear directorios en /tmp/alumno/] **********************************************************************************************************************************************************************************
+2024-07-30 17:10:12,255 p=3957 u=bgatto n=ansible | ok: [localhost] => (item=log)
+2024-07-30 17:10:12,503 p=3957 u=bgatto n=ansible | ok: [localhost] => (item=config)
+2024-07-30 17:10:12,511 p=3957 u=bgatto n=ansible | TASK [2PRecuperatorio : Crear archivo datos.txt] ********************************************************************************************************************************************************************************************
+2024-07-30 17:10:13,564 p=3957 u=bgatto n=ansible | ok: [localhost]
+2024-07-30 17:10:13,575 p=3957 u=bgatto n=ansible | TASK [Otra tarea] ***************************************************************************************************************************************************************************************************************************
+2024-07-30 17:10:13,588 p=3957 u=bgatto n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-07-30 17:10:13,608 p=3957 u=bgatto n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************************************
+2024-07-30 17:10:13,608 p=3957 u=bgatto n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-30 17:10:13,608 p=3957 u=bgatto n=ansible | localhost                  : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-30 17:13:56,175 p=4334 u=bgatto n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-30 17:13:56,219 p=4334 u=bgatto n=ansible | ERROR! the role 'Suoders_Gatto' was not found in /home/bgatto/UTN-FRA_SO_Examenes/202408/ansible/roles:/tmp:/home/bgatto/UTN-FRA_SO_Examenes/202408:/home/bgatto/UTN-FRA_SO_Examenes/202408/ansible
+
+The error appears to be in '/home/bgatto/UTN-FRA_SO_Examenes/202408/ansible/playbook.yml': line 8, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - Alta_usuarios_Gatto
+    - Suoders_Gatto
+      ^ here
+
+2024-07-30 17:14:10,615 p=4348 u=bgatto n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-30 17:14:10,701 p=4348 u=bgatto n=ansible | ERROR! conflicting action statements: dnf, with items
+
+The error appears to be in '/home/bgatto/UTN-FRA_SO_Examenes/202408/ansible/roles/Instala-tools_Gatto/tasks/main.yml': line 4, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: "Instalar programas"
+  ^ here
+
+2024-07-30 17:14:48,117 p=4365 u=bgatto n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-30 17:14:48,201 p=4365 u=bgatto n=ansible | ERROR! conflicting action statements: dnf, with items
+
+The error appears to be in '/home/bgatto/UTN-FRA_SO_Examenes/202408/ansible/roles/Instala-tools_Gatto/tasks/main.yml': line 4, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: "Instalar programas"
+  ^ here
+
+2024-07-30 17:17:53,411 p=4434 u=bgatto n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-30 17:17:53,498 p=4434 u=bgatto n=ansible | ERROR! conflicting action statements: hosts, tasks
+
+The error appears to be in '/home/bgatto/UTN-FRA_SO_Examenes/202408/ansible/roles/Instala-tools_Gatto/tasks/main.yml': line 4, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: "Instalar programas"
+  ^ here
+
+2024-07-30 17:18:51,561 p=4452 u=bgatto n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-30 17:18:51,643 p=4452 u=bgatto n=ansible | ERROR! conflicting action statements: hosts, tasks
+
+The error appears to be in '/home/bgatto/UTN-FRA_SO_Examenes/202408/ansible/roles/Instala-tools_Gatto/tasks/main.yml': line 3, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+ - name: Instalar programas
+   ^ here
+
+2024-07-30 17:20:06,355 p=4469 u=bgatto n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-30 17:20:06,436 p=4469 u=bgatto n=ansible | ERROR! conflicting action statements: hosts, tasks
+
+The error appears to be in '/home/bgatto/UTN-FRA_SO_Examenes/202408/ansible/roles/Instala-tools_Gatto/tasks/main.yml': line 3, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Instalar programas
+  ^ here
+
+2024-07-30 17:22:40,096 p=4510 u=bgatto n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-30 17:22:40,168 p=4510 u=bgatto n=ansible | ERROR! conflicting action statements: hosts, tasks
+
+The error appears to be in '/home/bgatto/UTN-FRA_SO_Examenes/202408/ansible/roles/Instala-tools_Gatto/tasks/main.yml': line 3, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+ - name: Instalar programas
+   ^ here
+
+2024-07-30 17:24:15,986 p=4535 u=bgatto n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-30 17:24:16,104 p=4535 u=bgatto n=ansible | ERROR! conflicting action statements: hosts, tasks
+
+The error appears to be in '/home/bgatto/UTN-FRA_SO_Examenes/202408/ansible/roles/Instala-tools_Gatto/tasks/main.yml': line 2, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+ - become: yes
+   ^ here
+
+2024-07-30 17:25:29,381 p=4551 u=bgatto n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-30 17:25:29,502 p=4551 u=bgatto n=ansible | ERROR! unexpected parameter type in action: <class 'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+The error appears to be in '/home/bgatto/UTN-FRA_SO_Examenes/202408/ansible/roles/Instala-tools_Gatto/tasks/main.yml': line 2, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+ - name: "Instalar herramientas necesarias"
+   ^ here
+
+2024-07-30 17:26:41,660 p=4568 u=bgatto n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-30 17:26:41,739 p=4568 u=bgatto n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to be in '/home/bgatto/UTN-FRA_SO_Examenes/202408/ansible/roles/Instala-tools_Gatto/tasks/main.yml': line 3, column 2, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- name: "Instalar herramientas necesarias"
+ become: yes
+ ^ here
+
+2024-07-30 17:27:24,350 p=4585 u=bgatto n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-30 17:27:24,440 p=4585 u=bgatto n=ansible | ERROR! unexpected parameter type in action: <class 'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+The error appears to be in '/home/bgatto/UTN-FRA_SO_Examenes/202408/ansible/roles/Instala-tools_Gatto/tasks/main.yml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- name: "Instalar herramientas necesarias"
+  ^ here
+
+2024-07-30 17:28:17,841 p=4601 u=bgatto n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-30 17:28:17,928 p=4601 u=bgatto n=ansible | PLAY [Ejecutar roles] ***********************************************************************************************************************************************************************************************************************
+2024-07-30 17:28:17,940 p=4601 u=bgatto n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+2024-07-30 17:28:18,344 p=4601 u=bgatto n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nbgatto@127.0.0.1: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2024-07-30 17:28:19,432 p=4601 u=bgatto n=ansible | ok: [localhost]
+2024-07-30 17:28:19,454 p=4601 u=bgatto n=ansible | TASK [2PRecuperatorio : Crear directorios en /tmp/alumno/] **********************************************************************************************************************************************************************************
+2024-07-30 17:28:19,887 p=4601 u=bgatto n=ansible | ok: [localhost] => (item=log)
+2024-07-30 17:28:20,227 p=4601 u=bgatto n=ansible | ok: [localhost] => (item=config)
+2024-07-30 17:28:20,237 p=4601 u=bgatto n=ansible | TASK [2PRecuperatorio : Crear archivo datos.txt] ********************************************************************************************************************************************************************************************
+2024-07-30 17:28:20,822 p=4601 u=bgatto n=ansible | ok: [localhost]
+2024-07-30 17:28:20,837 p=4601 u=bgatto n=ansible | TASK [Alta_usuarios_Gatto : Crear grupo profesores] *****************************************************************************************************************************************************************************************
+2024-07-30 17:28:21,624 p=4601 u=bgatto n=ansible | changed: [localhost]
+2024-07-30 17:28:21,632 p=4601 u=bgatto n=ansible | TASK [Alta_usuarios_Gatto : Crear grupo alumnos] ********************************************************************************************************************************************************************************************
+2024-07-30 17:28:22,022 p=4601 u=bgatto n=ansible | changed: [localhost]
+2024-07-30 17:28:22,028 p=4601 u=bgatto n=ansible | TASK [Alta_usuarios_Gatto : Crear usuario Profesor] *****************************************************************************************************************************************************************************************
+2024-07-30 17:28:22,790 p=4601 u=bgatto n=ansible | changed: [localhost]
+2024-07-30 17:28:22,795 p=4601 u=bgatto n=ansible | TASK [Alta_usuarios_Gatto : Crear usuario Alumno] *******************************************************************************************************************************************************************************************
+2024-07-30 17:28:23,418 p=4601 u=bgatto n=ansible | changed: [localhost]
+2024-07-30 17:28:23,437 p=4601 u=bgatto n=ansible | TASK [Sudoers_Gatto : GProfesores pueden usar sudo sin contraseña] **************************************************************************************************************************************************************************
+2024-07-30 17:28:24,063 p=4601 u=bgatto n=ansible | changed: [localhost]
+2024-07-30 17:28:24,086 p=4601 u=bgatto n=ansible | TASK [Instala-tools_Gatto : Instalar herramientas] ******************************************************************************************************************************************************************************************
+2024-07-30 17:28:46,526 p=4601 u=bgatto n=ansible | changed: [localhost] => (item=htop)
+2024-07-30 17:28:56,062 p=4601 u=bgatto n=ansible | ok: [localhost] => (item=tmux)
+2024-07-30 17:29:04,391 p=4601 u=bgatto n=ansible | ok: [localhost] => (item=tree)
+2024-07-30 17:29:26,837 p=4601 u=bgatto n=ansible | changed: [localhost] => (item=speedtest-cli)
+2024-07-30 17:29:26,939 p=4601 u=bgatto n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************************************
+2024-07-30 17:29:26,939 p=4601 u=bgatto n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-30 17:29:26,940 p=4601 u=bgatto n=ansible | localhost                  : ok=9    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-30 17:36:10,726 p=5333 u=bgatto n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-30 17:36:11,099 p=5333 u=bgatto n=ansible | PLAY [Ejecutar roles] ***********************************************************************************************************************************************************************************************************************
+2024-07-30 17:36:11,109 p=5333 u=bgatto n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+2024-07-30 17:36:11,290 p=5333 u=bgatto n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nbgatto@127.0.0.1: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2024-07-30 17:36:12,809 p=5333 u=bgatto n=ansible | ok: [localhost]
+2024-07-30 17:36:12,826 p=5333 u=bgatto n=ansible | TASK [2PRecuperatorio : Crear directorios en /tmp/alumno/] **********************************************************************************************************************************************************************************
+2024-07-30 17:36:13,237 p=5333 u=bgatto n=ansible | ok: [localhost] => (item=log)
+2024-07-30 17:36:13,568 p=5333 u=bgatto n=ansible | ok: [localhost] => (item=config)
+2024-07-30 17:36:13,578 p=5333 u=bgatto n=ansible | TASK [2PRecuperatorio : Crear archivo datos.txt] ********************************************************************************************************************************************************************************************
+2024-07-30 17:36:14,204 p=5333 u=bgatto n=ansible | ok: [localhost]
+2024-07-30 17:36:14,218 p=5333 u=bgatto n=ansible | TASK [Alta_usuarios_Gatto : Crear grupo profesores] *****************************************************************************************************************************************************************************************
+2024-07-30 17:36:14,722 p=5333 u=bgatto n=ansible | ok: [localhost]
+2024-07-30 17:36:14,729 p=5333 u=bgatto n=ansible | TASK [Alta_usuarios_Gatto : Crear grupo alumnos] ********************************************************************************************************************************************************************************************
+2024-07-30 17:36:15,649 p=5333 u=bgatto n=ansible | ok: [localhost]
+2024-07-30 17:36:15,655 p=5333 u=bgatto n=ansible | TASK [Alta_usuarios_Gatto : Crear usuario Profesor] *****************************************************************************************************************************************************************************************
+2024-07-30 17:36:16,199 p=5333 u=bgatto n=ansible | ok: [localhost]
+2024-07-30 17:36:16,205 p=5333 u=bgatto n=ansible | TASK [Alta_usuarios_Gatto : Crear usuario Alumno] *******************************************************************************************************************************************************************************************
+2024-07-30 17:36:16,590 p=5333 u=bgatto n=ansible | ok: [localhost]
+2024-07-30 17:36:16,603 p=5333 u=bgatto n=ansible | TASK [Sudoers_Gatto : GProfesores pueden usar sudo sin contraseña] **************************************************************************************************************************************************************************
+2024-07-30 17:36:17,162 p=5333 u=bgatto n=ansible | ok: [localhost]
+2024-07-30 17:36:17,193 p=5333 u=bgatto n=ansible | TASK [Instala-tools_Gatto : Instalar herramientas] ******************************************************************************************************************************************************************************************
+2024-07-30 17:36:23,553 p=5333 u=bgatto n=ansible | ok: [localhost] => (item=htop)
+2024-07-30 17:36:28,383 p=5333 u=bgatto n=ansible | ok: [localhost] => (item=tmux)
+2024-07-30 17:36:31,963 p=5333 u=bgatto n=ansible | ok: [localhost] => (item=tree)
+2024-07-30 17:36:34,810 p=5333 u=bgatto n=ansible | ok: [localhost] => (item=speedtest-cli)
+2024-07-30 17:36:34,900 p=5333 u=bgatto n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************************************
+2024-07-30 17:36:34,901 p=5333 u=bgatto n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-30 17:36:34,901 p=5333 u=bgatto n=ansible | localhost                  : ok=9    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-30 17:37:40,757 p=5670 u=bgatto n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-30 17:37:41,079 p=5670 u=bgatto n=ansible | PLAY [Ejecutar roles] ***********************************************************************************************************************************************************************************************************************
+2024-07-30 17:37:41,089 p=5670 u=bgatto n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+2024-07-30 17:37:41,317 p=5670 u=bgatto n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nbgatto@127.0.0.1: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2024-07-30 17:37:41,927 p=5670 u=bgatto n=ansible |  [ERROR]: User interrupted execution
+
+2024-07-30 17:40:27,155 p=5763 u=bgatto n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-30 17:40:27,273 p=5763 u=bgatto n=ansible | PLAY [Ejecutar roles] ***********************************************************************************************************************************************************************************************************************
+2024-07-30 17:40:27,283 p=5763 u=bgatto n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+2024-07-30 17:40:27,441 p=5763 u=bgatto n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nbgatto@127.0.0.1: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2024-07-30 17:40:28,816 p=5763 u=bgatto n=ansible | ok: [localhost]
+2024-07-30 17:40:28,846 p=5763 u=bgatto n=ansible | TASK [2PRecuperatorio : Crear directorios en /tmp/alumno/] **********************************************************************************************************************************************************************************
+2024-07-30 17:40:29,265 p=5763 u=bgatto n=ansible | ok: [localhost] => (item=log)
+2024-07-30 17:40:29,568 p=5763 u=bgatto n=ansible | ok: [localhost] => (item=config)
+2024-07-30 17:40:29,576 p=5763 u=bgatto n=ansible | TASK [2PRecuperatorio : Crear archivo datos.txt] ********************************************************************************************************************************************************************************************
+2024-07-30 17:40:30,263 p=5763 u=bgatto n=ansible | ok: [localhost]
+2024-07-30 17:40:30,275 p=5763 u=bgatto n=ansible | TASK [Alta_usuarios_Gatto : Crear grupo profesores] *****************************************************************************************************************************************************************************************
+2024-07-30 17:40:30,695 p=5763 u=bgatto n=ansible | ok: [localhost]
+2024-07-30 17:40:30,702 p=5763 u=bgatto n=ansible | TASK [Alta_usuarios_Gatto : Crear grupo alumnos] ********************************************************************************************************************************************************************************************
+2024-07-30 17:40:30,979 p=5763 u=bgatto n=ansible | ok: [localhost]
+2024-07-30 17:40:30,985 p=5763 u=bgatto n=ansible | TASK [Alta_usuarios_Gatto : Crear usuario Profesor] *****************************************************************************************************************************************************************************************
+2024-07-30 17:40:31,540 p=5763 u=bgatto n=ansible | ok: [localhost]
+2024-07-30 17:40:31,547 p=5763 u=bgatto n=ansible | TASK [Alta_usuarios_Gatto : Crear usuario Alumno] *******************************************************************************************************************************************************************************************
+2024-07-30 17:40:31,939 p=5763 u=bgatto n=ansible | ok: [localhost]
+2024-07-30 17:40:31,952 p=5763 u=bgatto n=ansible | TASK [Sudoers_Gatto : GProfesores pueden usar sudo sin contraseña] **************************************************************************************************************************************************************************
+2024-07-30 17:40:32,522 p=5763 u=bgatto n=ansible | ok: [localhost]
+2024-07-30 17:40:32,556 p=5763 u=bgatto n=ansible | TASK [Instala-tools_Gatto : Instalar herramientas] ******************************************************************************************************************************************************************************************
+2024-07-30 17:40:34,699 p=5763 u=bgatto n=ansible | ok: [localhost] => (item=htop)
+2024-07-30 17:40:37,178 p=5763 u=bgatto n=ansible | ok: [localhost] => (item=tmux)
+2024-07-30 17:40:40,378 p=5763 u=bgatto n=ansible | ok: [localhost] => (item=tree)
+2024-07-30 17:40:42,390 p=5763 u=bgatto n=ansible | ok: [localhost] => (item=speedtest-cli)
+2024-07-30 17:40:42,460 p=5763 u=bgatto n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************************************
+2024-07-30 17:40:42,461 p=5763 u=bgatto n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-30 17:40:42,461 p=5763 u=bgatto n=ansible | localhost                  : ok=9    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-30 17:43:18,060 p=6074 u=bgatto n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-30 17:43:18,191 p=6074 u=bgatto n=ansible | PLAY [Ejecutar roles] ***********************************************************************************************************************************************************************************************************************
+2024-07-30 17:43:18,202 p=6074 u=bgatto n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+2024-07-30 17:43:19,605 p=6074 u=bgatto n=ansible | ok: [127.0.0.1]
+2024-07-30 17:43:19,673 p=6074 u=bgatto n=ansible | ok: [localhost]
+2024-07-30 17:43:19,698 p=6074 u=bgatto n=ansible | TASK [2PRecuperatorio : Crear directorios en /tmp/alumno/] **********************************************************************************************************************************************************************************
+2024-07-30 17:43:20,144 p=6074 u=bgatto n=ansible | ok: [localhost] => (item=log)
+2024-07-30 17:43:20,145 p=6074 u=bgatto n=ansible | ok: [127.0.0.1] => (item=log)
+2024-07-30 17:43:20,431 p=6074 u=bgatto n=ansible | ok: [localhost] => (item=config)
+2024-07-30 17:43:20,453 p=6074 u=bgatto n=ansible | ok: [127.0.0.1] => (item=config)
+2024-07-30 17:43:20,461 p=6074 u=bgatto n=ansible | TASK [2PRecuperatorio : Crear archivo datos.txt] ********************************************************************************************************************************************************************************************
+2024-07-30 17:43:21,143 p=6074 u=bgatto n=ansible | ok: [localhost]
+2024-07-30 17:43:21,148 p=6074 u=bgatto n=ansible | ok: [127.0.0.1]
+2024-07-30 17:43:21,164 p=6074 u=bgatto n=ansible | TASK [Alta_usuarios_Gatto : Crear grupo profesores] *****************************************************************************************************************************************************************************************
+2024-07-30 17:43:21,542 p=6074 u=bgatto n=ansible | ok: [127.0.0.1]
+2024-07-30 17:43:21,544 p=6074 u=bgatto n=ansible | ok: [localhost]
+2024-07-30 17:43:21,550 p=6074 u=bgatto n=ansible | TASK [Alta_usuarios_Gatto : Crear grupo alumnos] ********************************************************************************************************************************************************************************************
+2024-07-30 17:43:21,842 p=6074 u=bgatto n=ansible | ok: [127.0.0.1]
+2024-07-30 17:43:21,875 p=6074 u=bgatto n=ansible | ok: [localhost]
+2024-07-30 17:43:21,891 p=6074 u=bgatto n=ansible | TASK [Alta_usuarios_Gatto : Crear usuario Profesor] *****************************************************************************************************************************************************************************************
+2024-07-30 17:43:22,445 p=6074 u=bgatto n=ansible | ok: [127.0.0.1]
+2024-07-30 17:43:22,448 p=6074 u=bgatto n=ansible | ok: [localhost]
+2024-07-30 17:43:22,455 p=6074 u=bgatto n=ansible | TASK [Alta_usuarios_Gatto : Crear usuario Alumno] *******************************************************************************************************************************************************************************************
+2024-07-30 17:43:22,810 p=6074 u=bgatto n=ansible | ok: [127.0.0.1]
+2024-07-30 17:43:22,814 p=6074 u=bgatto n=ansible | ok: [localhost]
+2024-07-30 17:43:22,831 p=6074 u=bgatto n=ansible | TASK [Sudoers_Gatto : GProfesores pueden usar sudo sin contraseña] **************************************************************************************************************************************************************************
+2024-07-30 17:43:23,383 p=6074 u=bgatto n=ansible | ok: [127.0.0.1]
+2024-07-30 17:43:23,400 p=6074 u=bgatto n=ansible | ok: [localhost]
+2024-07-30 17:43:23,418 p=6074 u=bgatto n=ansible | TASK [Instala-tools_Gatto : Instalar herramientas] ******************************************************************************************************************************************************************************************
+2024-07-30 17:43:25,342 p=6074 u=bgatto n=ansible | ok: [127.0.0.1] => (item=htop)
+2024-07-30 17:43:28,405 p=6074 u=bgatto n=ansible | ok: [localhost] => (item=htop)
+2024-07-30 17:43:31,520 p=6074 u=bgatto n=ansible | ok: [127.0.0.1] => (item=tmux)
+2024-07-30 17:43:33,555 p=6074 u=bgatto n=ansible | ok: [localhost] => (item=tmux)
+2024-07-30 17:43:35,301 p=6074 u=bgatto n=ansible | ok: [127.0.0.1] => (item=tree)
+2024-07-30 17:43:37,337 p=6074 u=bgatto n=ansible | ok: [localhost] => (item=tree)
+2024-07-30 17:43:39,756 p=6074 u=bgatto n=ansible | ok: [127.0.0.1] => (item=speedtest-cli)
+2024-07-30 17:43:43,143 p=6074 u=bgatto n=ansible | ok: [localhost] => (item=speedtest-cli)
+2024-07-30 17:43:43,240 p=6074 u=bgatto n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************************************
+2024-07-30 17:43:43,241 p=6074 u=bgatto n=ansible | 127.0.0.1                  : ok=9    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-30 17:43:43,241 p=6074 u=bgatto n=ansible | localhost                  : ok=9    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

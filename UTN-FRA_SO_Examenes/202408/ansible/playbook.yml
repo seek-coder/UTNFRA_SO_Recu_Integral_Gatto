@@ -1,11 +1,10 @@
 ---
-- hosts: all
 
-  tasks:
-    - include_role:
-        name: 2PRecuperatorio
-    
-    - name: "Otra tarea"
-      debug:
-        msg: "Despues de la ejecucion del rol"
-
+- name: "Ejecutar roles" 
+  hosts: all
+  become: true
+  roles:
+    - 2PRecuperatorio
+    - Alta_usuarios_Gatto
+    - Sudoers_Gatto
+    - Instala-tools_Gatto

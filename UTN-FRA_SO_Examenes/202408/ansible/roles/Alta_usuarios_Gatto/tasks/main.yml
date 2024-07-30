@@ -1,0 +1,33 @@
+---
+# tasks file for Alta_usuarios_Gatto
+
+- name: "Crear grupo profesores"
+  become: yes
+  group:
+    name: GProfesores
+    state: present
+
+- name: "Crear grupo alumnos"
+  become: yes
+  group:
+    name: GAlumnos
+    state: present
+
+- name: "Crear usuario Profesor"
+  become: yes
+  user:
+    name: "Profesor"
+    password: ""
+    groups: "GProfesores"
+    state: present
+    append: yes
+
+- name: "Crear usuario Alumno"
+  become: yes
+  user:
+    name: "Alumno"
+    password: ""
+    groups: "GAlumnos"
+    state: present
+    append: yes
+
