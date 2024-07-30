@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+    web:
+        image: seek1/web3_ri2024-gatto 
+        ports:
+          - 8081:80
+        volumes:
+          - /home/bgatto/UTN-FRA_SO_Examenes/202408/docker/web/file:/usr/share/nginx/html/file

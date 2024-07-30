@@ -1,0 +1,1 @@
+CPU Modelo: Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz Frecuencia: 4200.000Ghz
